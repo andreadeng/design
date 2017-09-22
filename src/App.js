@@ -1,22 +1,16 @@
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
+
 
 class App extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      items: []
-    }
-  }
-  
-componentWillMount() {
-  fetch( '')
-}
-
   render(){
-    let items = this.state.items
-    return (
-      <div>
-        
+    return(
+      <div className="App">
+        <AppBar 
+          title="Title"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+        />
+        Yooooo
       </div>
     )
   }
