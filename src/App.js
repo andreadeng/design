@@ -1,20 +1,14 @@
 import React from 'react';
-import AppBar from 'material-ui/AppBar';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-
-class App extends React.Component {
+export default class App extends React.Component {
   render(){
     return(
       <div className="App">
-        <AppBar 
-          title="Title"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-        />
-        Yooooo
+      	<MuiThemeProvider>
+          {this.props.children}
+      	</MuiThemeProvider>
       </div>
-    )
+    );
   }
 }
-
-
-export default App
