@@ -5,6 +5,17 @@ import {List, ListItem} from 'material-ui/List';
 import AppBar from 'material-ui/AppBar';
 import Divider from 'material-ui/Divider';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import styled from 'styled-components';
+
+
+const Button = styled.button`
+  border-radius: 3px;
+  padding: 0.25em 1em;
+  margin: 0 1em;
+  background: transparent;
+  color: palevioletred;
+  border: 2px solid palevioletred;
+`;
 
 
 export default class Home extends React.Component {
@@ -14,6 +25,7 @@ export default class Home extends React.Component {
         <AppBar
           title="Batto"
         />
+        <Button> Hi, I'm a dawbdlakwbdakhdbkhabdhawd </Button>
         <br />
         <Card>
           <CardHeader
@@ -29,17 +41,14 @@ export default class Home extends React.Component {
                 leftCheckbox={<Checkbox />}
                 primaryText="Fri, November 2"
               />
-              <Divider />
               <ListItem
                 leftCheckbox={<Checkbox />}
                 primaryText="Sat, November 3"
               />
-              <Divider />
               <ListItem
                 leftCheckbox={<Checkbox />}
                 primaryText="Fri, November 9"
               />
-              <Divider />
               <ListItem
                 leftCheckbox={<Checkbox />}
                 primaryText="Sat, November 10"

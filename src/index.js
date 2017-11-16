@@ -6,7 +6,7 @@ import './style.css';
 
 import App from './App';
 import Home from './containers/Home';
-import Challenges from './containers/Challenges';
+import Questions from './containers/Questions';
 
 class List extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class List extends React.Component {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
-          <Route path="challenges" component={Challenges} />
+          <Route path="questions" component={Questions} />
         </Route>
       </Router>
     );
