@@ -15,11 +15,11 @@ const ButtonOption = Button.extend`
   text-align: left;
   margin-bottom: 0.25em;
   font-weight: regular;
-  background: ${props => props.primary ? '#3490DE' : 'white'};
-  border: 1px solid ${props => props.primary ? '#3490DE' : '#C9D6DF'};
+  background: ${props => props.primary ? '#FC5185' : 'white'};
+  border: 1px solid ${props => props.primary ? '#FC5185' : '#C9D6DF'};
   color: ${props => props.primary ? 'white' : '#393E46'};
   &:hover {
-    background: ${props => props.primary ? '#3490DE' : '#F0F5F9'};
+    background: ${props => props.primary ? '#FC5185' : '#F0F5F9'};
   }
 `;
 
