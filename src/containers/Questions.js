@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Question from '../components/Question';
 
 const Background = styled.section`
-  background: #E4F9F5;
+  background: #364F6B;
   padding: 1em;
   height: 100%;
 `;
