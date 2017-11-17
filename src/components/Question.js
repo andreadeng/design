@@ -62,7 +62,7 @@ export default class Questions extends React.Component {
     this.state = {};
   }
 
-  toggleSelect_1 = () => () => {
+  onlySelect_1 = () => () => {
     console.log('Selected option 1!')
     this.setState({selected_1: true});
     this.setState({selected_2: false});
@@ -70,7 +70,7 @@ export default class Questions extends React.Component {
     this.setState({selected_4: false});
   }
 
-  toggleSelect_2 = () => () => {
+  onlySelect_2 = () => () => {
     console.log('Selected option 2!')
     this.setState({selected_1: false});
     this.setState({selected_2: true});
@@ -78,7 +78,7 @@ export default class Questions extends React.Component {
     this.setState({selected_4: false});
   }
 
-  toggleSelect_3 = () => () => {
+  onlySelect_3 = () => () => {
     console.log('Selected option 3!')
     this.setState({selected_1: false});
     this.setState({selected_2: false});
@@ -86,7 +86,7 @@ export default class Questions extends React.Component {
     this.setState({selected_4: false});
   }
 
-  toggleSelect_4 = () => () => {
+  onlySelect_4 = () => () => {
     console.log('Selected option 4!')
     this.setState({selected_1: false});
     this.setState({selected_2: false});
@@ -105,22 +105,22 @@ export default class Questions extends React.Component {
           <Title> {this.props.questionTitle} </Title>
           <Option 
             selected={this.state.selected_1}
-            onClickSelect={this.toggleSelect_1()}
+            onClickSelect={this.onlySelect_1()}
             text={this.props.option_1}
           />
           <Option
             selected={this.state.selected_2}
-            onClickSelect={this.toggleSelect_2()}
+            onClickSelect={this.onlySelect_2()}
             text={this.props.option_2}
           />
           <Option 
             selected={this.state.selected_3}
-            onClickSelect={this.toggleSelect_3()}
+            onClickSelect={this.onlySelect_3()}
             text={this.props.option_3}
           />
           <Option
             selected={this.state.selected_4}
-            onClickSelect={this.toggleSelect_4()}
+            onClickSelect={this.onlySelect_4()}
             text={this.props.option_4}
           />
         </Wrapper>           

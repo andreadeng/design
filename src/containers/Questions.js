@@ -14,28 +14,8 @@ export default class Questions extends React.Component {
     this.state = {};
   }
 
-  toggleSelect_1 = () => () => {
-    console.log('Selected option 1!')
-    this.setState({selected_1: !this.state.selected_1});
-  }
-
-  toggleSelect_2 = () => () => {
-    console.log('Selected option 2!')
-    this.setState({selected_2: !this.state.selected_2});
-  }
-
-  toggleSelect_3 = () => () => {
-    console.log('Selected option 3!')
-    this.setState({selected_3: !this.state.selected_3});
-  }
-
-  toggleSelect_4 = () => () => {
-    console.log('Selected option 4!')
-    this.setState({selected_4: !this.state.selected_4});
-  }
-
   render() {
-      return (
+    return (
       <Background>
         <Question 
           questionTitle = "What is my favorite food?"

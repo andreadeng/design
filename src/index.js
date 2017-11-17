@@ -7,6 +7,8 @@ import './style.css';
 import App from './App';
 import Home from './containers/Home';
 import Questions from './containers/Questions';
+import Itinerary from './containers/Itinerary';
+
 
 class List extends React.Component {
   render() {
@@ -15,6 +17,7 @@ class List extends React.Component {
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="questions" component={Questions} />
+          <Route path="itinerary" component={Itinerary} />
         </Route>
       </Router>
     );
