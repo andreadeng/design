@@ -15,6 +15,7 @@ import Avatar from 'material-ui/Avatar';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import FontIcon from 'material-ui/FontIcon';
 
 
 const Container = styled.section`
@@ -114,17 +115,17 @@ class Itinerary extends React.Component {
                     rightAvatar={<Avatar src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" />}
                   />
                   <ListItem
-                    leftCheckbox={<Checkbox />}
+                    leftCheckbox={<Checkbox checked={true} />}
                     primaryText="Meat"
                     rightAvatar={<Avatar src="https://avatarfiles.alphacoders.com/798/79894.jpg" />}
                   />
                   <ListItem
-                    leftCheckbox={<Checkbox />}
+                    leftCheckbox={<Checkbox checked={true} />}
                     primaryText="Veggies"
                     rightAvatar={<Avatar src="https://avatarfiles.alphacoders.com/798/79894.jpg" />}
                   />
                   <ListItem
-                    leftCheckbox={<Checkbox />}
+                    leftCheckbox={<Checkbox checked={true} />}
                     primaryText="Ice cream"
                     rightAvatar={<Avatar src="https://avatarfiles.alphacoders.com/798/79894.jpg" />}
                   />

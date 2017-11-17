@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Question from '../components/Question';
+import Votable from '../components/Votable';
+
 
 const Background = styled.section`
   background: #364F6B;
@@ -17,6 +19,7 @@ export default class Questions extends React.Component {
   render() {
     return (
       <Background>
+        <Votable />
         <Question 
           questionTitle = "What is my favorite food?"
           option_1 = "Fried chicken"
