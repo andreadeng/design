@@ -64,22 +64,34 @@ export default class Questions extends React.Component {
 
   toggleSelect_1 = () => () => {
     console.log('Selected option 1!')
-    this.setState({selected_1: !this.state.selected_1});
+    this.setState({selected_1: true});
+    this.setState({selected_2: false});
+    this.setState({selected_3: false});
+    this.setState({selected_4: false});
   }
 
   toggleSelect_2 = () => () => {
     console.log('Selected option 2!')
-    this.setState({selected_2: !this.state.selected_2});
+    this.setState({selected_1: false});
+    this.setState({selected_2: true});
+    this.setState({selected_3: false});
+    this.setState({selected_4: false});
   }
 
   toggleSelect_3 = () => () => {
     console.log('Selected option 3!')
-    this.setState({selected_3: !this.state.selected_3});
+    this.setState({selected_1: false});
+    this.setState({selected_2: false});
+    this.setState({selected_3: true});
+    this.setState({selected_4: false});
   }
 
   toggleSelect_4 = () => () => {
     console.log('Selected option 4!')
-    this.setState({selected_4: !this.state.selected_4});
+    this.setState({selected_1: false});
+    this.setState({selected_2: false});
+    this.setState({selected_3: false});
+    this.setState({selected_4: true});
   }
 
   render() {
